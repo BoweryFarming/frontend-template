@@ -1,7 +1,7 @@
 import './index.css'
 
 import React from 'react'
-import { createTheme } from './theme'
+import { createTheme } from '../theme'
 
 export default createTheme({
   logo: {

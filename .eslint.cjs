@@ -157,7 +157,9 @@ module.exports = {
     "import/resolver": {
       alias: {
         map: [
-          ["$components", path.resolve(__dirname, 'src', 'components')]
+          ["$components", path.resolve(__dirname, 'src', 'components')],
+          ["$util", path.resolve(__dirname, 'src', 'util')],
+          ["$hooks", path.resolve(__dirname, 'src', 'hooks')],
         ],
         extensions: [".ts", ".tsx"],
       },

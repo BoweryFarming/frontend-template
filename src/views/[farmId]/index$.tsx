@@ -11,7 +11,7 @@ const Controls = () => {
   return (
     <div className='h-full w-full grid place-content-center text-center'>
       <h1 className='text-xl'>Hello farm {farmId}!</h1>
-      <p>This is Farm: {farmId}!</p>
+      <p>This is a farm!</p>
     </div>
   )
 }

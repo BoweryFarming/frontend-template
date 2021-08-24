@@ -1,5 +1,5 @@
 import React, { ReactElement, useContext } from 'react'
-import Link from './Link'
+import Link from '$components/Link'
 import { themeConfigCtx } from '../ctx'
 
 const AppHeader = (): ReactElement => {
@@ -11,11 +11,11 @@ const AppHeader = (): ReactElement => {
         {logo.children}
       </Link>
       {topNavs && (
-        <nav className='flex'>
+        <nav className='flex mr-1'>
           {topNavs.map((item) =>
             <Link
               key={item.to ?? item.href}
-              className='block p-3'
+              className='block py-1 px-2 rounded'
               activeClassName='bg-green-300'
               {...item}
             />
