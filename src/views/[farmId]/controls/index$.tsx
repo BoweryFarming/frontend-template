@@ -2,10 +2,10 @@
  * @title Controls
  */
 
-import React from 'react'
+import React, { ReactElement } from 'react'
 import { useParams } from 'react-router'
 
-const Controls = () => {
+const Controls = (): ReactElement => {
   const { farmId } = useParams<RouteParams>()
 
   return (

@@ -2,10 +2,10 @@
  * @title Monitoring
  */
 
-import React from 'react'
+import React, { ReactElement } from 'react'
 import { useParams } from 'react-router'
 
-function Monitoring() {
+const Monitoring = (): ReactElement => {
   const { farmId } = useParams<RouteParams>()
 
   return (

@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import reactRefresh from '@vitejs/plugin-react-refresh'
 import pages from 'vite-plugin-react-pages'
-import path from 'path'
+import path from 'node:path'
 
 export const alias = {
   $components: path.resolve(__dirname, 'src', 'components'),
@@ -11,11 +11,8 @@ export const alias = {
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    reactRefresh(),
-    pages({ pagesDir: path.resolve(__dirname, 'src', 'views') }),
-  ],
+  plugins: [reactRefresh(), pages.default({ pagesDir: path.resolve(__dirname, 'src', 'views') })],
   resolve: {
-    alias
-  }
+    alias,
+  },
 })

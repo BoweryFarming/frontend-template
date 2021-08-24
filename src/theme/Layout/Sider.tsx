@@ -13,14 +13,14 @@ const Sider: React.FC<Props> = ({ sideNavsData }) => {
 
   return (
     <nav className='min-w-[150px] p-1 border-r'>
-      {sideNavsData.map((item) =>
+      {sideNavsData.map((item) => (
         <Link
           key={item.to ?? item.href}
           className='block py-1 px-2 rounded-sm'
           activeClassName='bg-green-300'
           {...item}
         />
-      )}
+      ))}
     </nav>
   )
 }

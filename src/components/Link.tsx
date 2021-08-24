@@ -10,7 +10,15 @@ interface Props extends MenuConfig {
   rest?: unknown
 }
 
-const Link = ({ href, to, className, activeClassName, activeIfMatch, children, ...rest }: PropsWithChildren<Props>): ReactElement => {
+const Link = ({
+  href,
+  to,
+  className,
+  activeClassName,
+  activeIfMatch,
+  children,
+  ...rest
+}: PropsWithChildren<Props>): ReactElement => {
   const location = useLocation()
   const params = useParams<RouteParams>()
 
@@ -21,10 +29,13 @@ const Link = ({ href, to, className, activeClassName, activeIfMatch, children, .
   }
 
   const active = useMemo(() => {
-    return matchPath(location.pathname, activeIfMatch ?? {
-      path,
-      exact: true,
-    })
+    return matchPath(
+      location.pathname,
+      activeIfMatch ?? {
+        path,
+        exact: true,
+      }
+    )
   }, [location.pathname, path])
 
   // If params still exist in the route, don't render it.

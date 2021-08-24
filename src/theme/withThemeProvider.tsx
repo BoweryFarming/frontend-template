@@ -1,6 +1,5 @@
 import React from 'react'
 import { themeConfigCtx, themePropsCtx } from './ctx'
-
 import type { ThemeProps } from 'vite-plugin-react-pages/clientTypes'
 import type { ThemeConfig } from './types'
 

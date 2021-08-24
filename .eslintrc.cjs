@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   env: {
     browser: true,
@@ -16,7 +18,7 @@ module.exports = {
     "react",
     "react-hooks",
     "unicorn",
-    "import"
+    "import",
     "@typescript-eslint",
     "jsx-a11y",
     "sonarjs",
@@ -84,7 +86,7 @@ module.exports = {
     "prefer-arrow-callback": "error",
     "prefer-const": "error",
     "prefer-template": "error",
-    "quote-props": "error",
+    "quote-props": ["error", "as-needed"],
 
     "prefer-arrow/prefer-arrow-functions": [
       "error",

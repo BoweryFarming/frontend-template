@@ -19,6 +19,6 @@ export default createTheme({
   sideNavs: [
     { children: 'Monitoring', to: '/:farmId/monitoring' },
     { children: 'Controls', to: '/:farmId/controls' },
-    { children: 'Admin', to: '/admin',  }
+    { children: 'Admin', to: '/admin' },
   ],
 })

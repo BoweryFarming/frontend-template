@@ -22,13 +22,13 @@ export interface MenuConfig {
 export interface SideNavsContext {
   readonly loadState: LoadState
   readonly loadedData: PagesLoaded
-  readonly staticData: Record<string, any>
+  readonly staticData: Record<string, unknown>
 }
 
 export interface ThemeConfig {
   logo: {
     path?: string
-    children: React.ReactNode
+    children: React.ReactElement | null
   }
   topNavs?: ReadonlyArray<MenuConfig>
   sideNavs?:

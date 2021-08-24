@@ -1,15 +1,13 @@
 /**
- * @title Admin
+ * @title Home
  */
 
-import React from 'react'
+import React, { ReactElement } from 'react'
 
-const App = () => {
+const App = (): ReactElement => {
   return (
     <main className='h-full w-full grid place-content-center'>
-      <h1 className='text-xl'>
-        Hello world!
-      </h1>
+      <h1 className='text-xl'>Hello world!</h1>
     </main>
   )
 }
